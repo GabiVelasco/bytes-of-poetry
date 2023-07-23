@@ -20,18 +20,174 @@
 
 
 <body>
-  <app-root></app-root>
-
   <router-outlet></router-outlet>
-
+  <app-root></app-root>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular/12.2.17/core.umd.min.js"></script>
+
+<!-- https://codepen.io/bcarvalho/pen/WXmwBq -->
+<section class="slideshow" id="js-header">
+  <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+    <div class="show__slide-background-parallax background-absolute js-parallax" data-speed="-1" data-position="top"
+      data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div class="slideshow__slide-image background-absolute"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2017/03/10/23/13/oracle-girl-2133976_960_720.jpg?auto=compress&cs=tinysrgb&h=1080&w=1920');">
+
+                  <!-- style="background-image: url('https://images.pexels.com/photos/190537/pexels-photo-190537.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920');"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <h1 class="slideshow__slide-caption-title">Bytes of Poetry</h1>
+          <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+            <span class="slideshow__slide-caption-subtitle-label">Gabivelasco.movit.anz</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slideshow__slide js-slider-home-slide is-next" data-slide="2">
+    <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+      data-position="top" data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div class="slideshow__slide-image background-absolute"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2014/10/25/19/21/tablet-502941_1280.jpg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920');">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <h1 class="slideshow__slide-caption-title"><a class="white" routerLink="/">Poet Office</a></h1>
+          <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+            <span class="slideshow__slide-caption-subtitle-label">
+
+              <div routerLinkActive="active"><a class="white" routerLink="/formular">TIME MANAGEMENT</a></div><br>
+              <div routerLinkActive="active"><a class="white" routerLink="/formular">CALENDAR</a></div><br>
+              <div routerLinkActive="active"><a class="white" routerLink="/formular">POET - IT GUIDES</a></div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="3">
+    <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+      data-position="top" data-target="#js-header">
+      <div class="slideshow__slide-background-load-wrap background-absolute">
+        <div class="slideshow__slide-background-load background-absolute">
+          <div class="slideshow__slide-background-wrap background-absolute">
+            <div class="slideshow__slide-background background-absolute">
+              <div class="slideshow__slide-image-wrap background-absolute">
+                <div class="slideshow__slide-image background-absolute"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2017/02/03/22/51/hammock-2036336_1280.jpg?auto=compress&cs=tinysrgb&h=1080&w=1920');">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow__slide-caption">
+      <div class="slideshow__slide-caption-text">
+        <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+          <h1 class="slideshow__slide-caption-title">Hey, take a time to relax!</h1>
+          <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+            <span class="slideshow__slide-caption-subtitle-label">Everybody needs</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-header-home_footer">
+    <div class="o-container">
+      <div class="c-header-home_controls -nomobile o-button-group">
+        <div class="js-parallax is-inview" data-speed="1" data-position="top" data-target="#js-header">
+          <button class="o-button -white -square -left js-slider-home-button js-slider-home-prev" type="button">
+            <span class="o-button_label">
+              <svg class="o-button_icon" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-prev"></use>
+              </svg>
+            </span>
+          </button>
+          <button class="o-button -white -square js-slider-home-button js-slider-home-next" type="button">
+            <span class="o-button_label">
+              <svg class="o-button_icon" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-next"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol viewBox="0 0 18 18" id="arrow-next">
+    <path id="arrow-next-arrow.svg" d="M12.6,9L4,17.3L4.7,18l8.5-8.3l0,0L14,9l0,0l-0.7-0.7l0,0L4.7,0L4,0.7L12.6,9z" />
+  </symbol>
+  <symbol viewBox="0 0 18 18" id="arrow-prev">
+    <path id="arrow-prev-arrow.svg" d="M14,0.7L13.3,0L4.7,8.3l0,0L4,9l0,0l0.7,0.7l0,0l8.5,8.3l0.7-0.7L5.4,9L14,0.7z" />
+  </symbol>
+</svg>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular/12.2.17/core.umd.min.js"></script> -->
 
 
 </body>
 
+</html>
+
 
 
 <style>
+  html,
+  body {
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+
+
+
+
+
+  }
+
+  footer {
+    margin-bottom: 0px;
+  }
+
   .white {
     color: white
   }
@@ -458,6 +614,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    margin-bottom: 0px;
   }
 
   .c-header-home_controls,
@@ -2242,6 +2399,3 @@
 
 
 </script>
-</body>
-
-</html>
